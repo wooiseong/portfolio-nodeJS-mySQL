@@ -23,14 +23,14 @@ app.post('/feedback', (req,res) => {
   const sqlStr = 'select * from feedback_form where name = ?'
   db.query(sqlStr,body.name, (err,results) => {
       if (err){
-        return res.send({status: 100, message: '用戶是否重複提交查詢失敗'})
+        return res.send({status: 400, message: '用戶提交失敗'})
       } 
       if (results.length > 0){
-      return res.send({status:  300 , message: '相同用戶重複提交數據', results})
+      return res.send({status:  409 , message: '相同用戶重複提交數據', results})
       }
       const sql = 'insert into feedback_form set ?'
       db.query(sql,body , (err,results) => {
-          if (err) return res.send({status:1, message: '用戶表單加入數據庫失敗'})
+          if (err) return res.send({status: 500 , message: '用戶表單加入數據庫失敗'})
           if (results.affectedRows === 1){
             res.send({status:  200 , message: '用戶表單加入數據庫成功', results})
           }
