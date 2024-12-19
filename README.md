@@ -1,6 +1,6 @@
 # portfolio-nodeJS-mySql
 
-This is the backend database for the project <a href="https://github.com/wooiseong/portfolio-project-vercel/tree/main">portfolio</a>. It utilizes express to build a simple web application to collect feedback from users and generate appropriate responses.
+This is the backend database for the project <a href="https://github.com/wooiseong/portfolio-project-vercel/tree/main">portfolio</a>. It utilizes Express to build a simple web application to collect feedback from users and generate appropriate responses.
 
 
 ## View
