@@ -12,8 +12,8 @@ Desktop (1366px)
 | :--------------------------: | ------------------------------------------------------------ | 
 |    200    | The feedback is successfully added to the database |
 |      400       | The server could not understand the request because of invalid syntax | 
-|      409        | Conflict: repeat submission of feedback form with the same name  | 
-|      500  | There is error when adding the feedback to mySql database              | 
+|      409        | Conflict: repeat submission of feedback with the same name  | 
+|      500  | There is an error when adding the feedback to mySql database              | 
 
 
 ## Installation
